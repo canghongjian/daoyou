@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_new"
+    tools:context=".MainActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:layout_width="200dp"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:layout_gravity="center"
+        android:hint="请输入账户" />
+
+
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="请输入密码" />
+
+    <EditText
+        android:id="@+id/reg_password_again"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="请再次输入密码" />
+
+    <EditText
+        android:id="@+id/reg_nickname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="请输入平台昵称" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:layout_gravity="center"
+        android:entries="@array/sexes"
+        />
+
+
+    <EditText
+        android:id="@+id/info_findPW"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="请输入预留密保信息" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/register"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30pt"
+            android:text="注册"
+            android:textAlignment="center"
+            android:textColor="#556B2F"
+            android:textSize="25sp" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

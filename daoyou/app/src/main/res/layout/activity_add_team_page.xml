@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTeamPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorGreen"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_main_Button"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/tuihui" />
+            <!--android:src="@drawable/icon_add_team" -->
+
+
+            <TextView
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:paddingRight="40dp"
+                android:text="发布组队"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="28sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择组队类型"
+            android:textSize="28sp"
+            android:textAlignment="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/button_zhanlan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/button_zhiyuan"
+                    app:layout_constraintEnd_toStartOf="@+id/gl5"
+                    app:layout_constraintStart_toStartOf="@+id/gl4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/exhibition" />
+
+                <ImageView
+                    android:id="@+id/button_waimai"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/button_saishi"
+                    app:layout_constraintEnd_toStartOf="@+id/gl4"
+                    app:layout_constraintStart_toStartOf="@+id/gl3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/waimai" />
+
+                <ImageView
+                    android:id="@+id/button_zhiyuan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/gl5"
+                    app:layout_constraintStart_toStartOf="@+id/gl4"
+                    app:layout_constraintTop_toBottomOf="@+id/button_zhanlan"
+                    app:srcCompat="@drawable/volunteer" />
+
+                <ImageView
+                    android:id="@+id/button_chuxing"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/button_study"
+                    app:layout_constraintEnd_toStartOf="@+id/gl3"
+                    app:layout_constraintStart_toStartOf="@+id/gl2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/travel" />
+
+                <ImageView
+                    android:id="@+id/button_xiaonei"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/gl2"
+                    app:layout_constraintStart_toStartOf="@+id/gl1"
+                    app:layout_constraintTop_toBottomOf="@+id/button_yanchu"
+                    app:srcCompat="@drawable/inschool" />
+
+                <ImageView
+                    android:id="@+id/button_saishi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/gl4"
+                    app:layout_constraintStart_toStartOf="@+id/gl3"
+                    app:layout_constraintTop_toBottomOf="@+id/button_waimai"
+                    app:srcCompat="@drawable/match" />
+
+                <ImageView
+                    android:id="@+id/button_study"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_saishi"
+                    app:layout_constraintHorizontal_bias="0.301"
+                    app:layout_constraintStart_toStartOf="@+id/gl2"
+                    app:layout_constraintTop_toBottomOf="@+id/button_chuxing"
+                    app:srcCompat="@drawable/study" />
+
+                <ImageView
+                    android:id="@+id/button_yanchu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/button_xiaonei"
+                    app:layout_constraintEnd_toStartOf="@+id/gl2"
+                    app:layout_constraintStart_toStartOf="@+id/gl1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/sing" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="26dp"
+                    app:layout_constraintGuide_percent="0.1" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="121dp"
+                    app:layout_constraintGuide_percent="0.25" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="229dp"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="237dp"
+                    app:layout_constraintGuide_percent="0.75" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="378dp"
+                    app:layout_constraintGuide_percent="0.9" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="演出"
+                    app:layout_constraintBottom_toTopOf="@+id/button_xiaonei"
+                    app:layout_constraintEnd_toStartOf="@+id/gl2"
+                    app:layout_constraintStart_toStartOf="@+id/gl1"
+                    app:layout_constraintTop_toBottomOf="@+id/button_yanchu" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="出行"
+                    app:layout_constraintBottom_toTopOf="@+id/button_study"
+                    app:layout_constraintEnd_toStartOf="@+id/gl3"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/button_chuxing" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="外卖"
+                    app:layout_constraintBottom_toTopOf="@+id/button_saishi"
+                    app:layout_constraintEnd_toStartOf="@+id/textView4"
+                    app:layout_constraintHorizontal_bias="0.37"
+                    app:layout_constraintStart_toStartOf="@+id/gl3"
+                    app:layout_constraintTop_toBottomOf="@+id/button_waimai" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="展览"
+                    app:layout_constraintBottom_toTopOf="@+id/button_zhiyuan"
+                    app:layout_constraintEnd_toStartOf="@+id/gl5"
+                    app:layout_constraintStart_toStartOf="@+id/gl4"
+                    app:layout_constraintTop_toBottomOf="@+id/button_zhanlan" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="校内"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/gl2"
+                    app:layout_constraintStart_toStartOf="@+id/gl1"
+                    app:layout_constraintTop_toBottomOf="@+id/button_xiaonei" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="学习"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/gl3"
+                    app:layout_constraintStart_toStartOf="@+id/gl2"
+                    app:layout_constraintTop_toBottomOf="@+id/button_study"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="赛事"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView16"
+                    app:layout_constraintHorizontal_bias="0.58"
+                    app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="志愿"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/gl5"
+                    app:layout_constraintHorizontal_bias="0.526"
+                    app:layout_constraintStart_toStartOf="@+id/gl4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="组队人数"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/addmemberNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:hint="请输入队伍最大人数"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="截止时间"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/addendTimeYear"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="年"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/addendTimeMonth"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="月"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/addendTimeDay"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="日"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/addendTimeHour"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="时"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="队伍简介"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/addteam_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:hint="请输入队伍简介"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="详细信息"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/addteam_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:hint="请输入队伍详细信息"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/addSureButton"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40pt"
+            android:text="确认发布"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:background="@color/colorGreen"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>
